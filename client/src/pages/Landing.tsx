@@ -11,7 +11,7 @@ import {
   ChevronDown,
   Phone,
   X,
-  Bone,
+
   Shield,
 } from "lucide-react";
 import { HudButton } from "@/components/HudButton";
@@ -135,15 +135,6 @@ export default function Landing() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
-              <TechCard
-                title="Skeletal Tracking"
-                icon={<Bone className="w-6 h-6 text-[#22D3EE]" />}
-              >
-                Our AI-driven skeletal tracking utilizes advanced computer
-                vision to provide real-time biomechanical analysis. It
-                identifies posture defects, joint angles, and movement
-                patterns that human eyes simply cannot catch.
-              </TechCard>
               <TechCard
                 title="24/7 AI Coaching"
                 icon={<Cpu className="w-6 h-6 text-[#22D3EE]" />}
