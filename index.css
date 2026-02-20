@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222 47% 11%;
+  --primary: 188 86% 53%;
+  --primary-foreground: 222 47% 11%;
+  --muted: 210 40% 96%;
+  --muted-foreground: 215 16% 47%;
+  --card: 0 0% 100%;
+  --card-foreground: 222 47% 11%;
+  --border: 222 47% 11%;
+  --input: 222 47% 11%;
+  --ring: 188 86% 53%;
+  --radius: 0px; 
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    cursor: crosshair;
+  }
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-primary/20;
+    font-family: 'Rajdhani', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Orbitron', sans-serif;
+    @apply uppercase tracking-wider font-bold;
+  }
+}
+
+@layer utilities {
+  .hud-grid {
+    background-image: 
+      linear-gradient(rgba(15, 23, 42, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(15, 23, 42, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .phone-frame {
+    @apply relative mx-auto border-4 border-[#0F172A] w-[300px] h-[600px] bg-white overflow-hidden;
+  }
+}
